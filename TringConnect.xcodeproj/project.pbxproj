@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185A3FC5281D65F6009331E6 /* TCHomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A3FC4281D65F6009331E6 /* TCHomeViewController.storyboard */; };
+		185A3FC7281D6627009331E6 /* TCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A3FC6281D6627009331E6 /* TCHomeViewController.swift */; };
 		187BF806281CFF7D00A0C2E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF805281CFF7D00A0C2E2 /* AppDelegate.swift */; };
 		187BF808281CFF7D00A0C2E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF807281CFF7D00A0C2E2 /* SceneDelegate.swift */; };
-		187BF80A281CFF7D00A0C2E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF809281CFF7D00A0C2E2 /* ViewController.swift */; };
-		187BF80D281CFF7D00A0C2E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BF80B281CFF7D00A0C2E2 /* Main.storyboard */; };
 		187BF810281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 187BF80E281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld */; };
 		187BF812281CFF7E00A0C2E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187BF811281CFF7E00A0C2E2 /* Assets.xcassets */; };
-		187BF815281CFF7E00A0C2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BF813281CFF7E00A0C2E2 /* LaunchScreen.storyboard */; };
+		187BF815281CFF7E00A0C2E2 /* TCLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BF813281CFF7E00A0C2E2 /* TCLaunchScreen.storyboard */; };
 		187BF820281CFF7E00A0C2E2 /* TringConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF81F281CFF7E00A0C2E2 /* TringConnectTests.swift */; };
 		187BF82A281CFF7E00A0C2E2 /* TringConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF829281CFF7E00A0C2E2 /* TringConnectUITests.swift */; };
 		187BF82C281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */; };
@@ -38,14 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185A3FC4281D65F6009331E6 /* TCHomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TCHomeViewController.storyboard; sourceTree = "<group>"; };
+		185A3FC6281D6627009331E6 /* TCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCHomeViewController.swift; sourceTree = "<group>"; };
 		187BF802281CFF7D00A0C2E2 /* TringConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TringConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187BF805281CFF7D00A0C2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187BF807281CFF7D00A0C2E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		187BF809281CFF7D00A0C2E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		187BF80C281CFF7D00A0C2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		187BF80F281CFF7D00A0C2E2 /* TringConnect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TringConnect.xcdatamodel; sourceTree = "<group>"; };
 		187BF811281CFF7E00A0C2E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		187BF814281CFF7E00A0C2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		187BF814281CFF7E00A0C2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TCLaunchScreen.storyboard; sourceTree = "<group>"; };
 		187BF816281CFF7E00A0C2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187BF81B281CFF7E00A0C2E2 /* TringConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TringConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187BF81F281CFF7E00A0C2E2 /* TringConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TringConnectTests.swift; sourceTree = "<group>"; };
@@ -91,6 +91,66 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		185A3FBF281D651D009331E6 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				187BF807281CFF7D00A0C2E2 /* SceneDelegate.swift */,
+				187BF805281CFF7D00A0C2E2 /* AppDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		185A3FC0281D652F009331E6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				185A3FC1281D653D009331E6 /* Templates */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		185A3FC1281D653D009331E6 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				185A3FC3281D6594009331E6 /* LaunchScreen */,
+				185A3FC2281D6549009331E6 /* HomeViewController */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		185A3FC2281D6549009331E6 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				185A3FC4281D65F6009331E6 /* TCHomeViewController.storyboard */,
+				185A3FC6281D6627009331E6 /* TCHomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		185A3FC3281D6594009331E6 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				187BF813281CFF7E00A0C2E2 /* TCLaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		185A3FC8281D669D009331E6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				187BF816281CFF7E00A0C2E2 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		185A3FC9281D66DB009331E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				187BF811281CFF7E00A0C2E2 /* Assets.xcassets */,
+				187BF80E281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		187BF7F9281CFF7D00A0C2E2 = {
 			isa = PBXGroup;
 			children = (
@@ -116,14 +176,10 @@
 		187BF804281CFF7D00A0C2E2 /* TringConnect */ = {
 			isa = PBXGroup;
 			children = (
-				187BF805281CFF7D00A0C2E2 /* AppDelegate.swift */,
-				187BF807281CFF7D00A0C2E2 /* SceneDelegate.swift */,
-				187BF809281CFF7D00A0C2E2 /* ViewController.swift */,
-				187BF80B281CFF7D00A0C2E2 /* Main.storyboard */,
-				187BF811281CFF7E00A0C2E2 /* Assets.xcassets */,
-				187BF813281CFF7E00A0C2E2 /* LaunchScreen.storyboard */,
-				187BF816281CFF7E00A0C2E2 /* Info.plist */,
-				187BF80E281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld */,
+				185A3FC9281D66DB009331E6 /* Resources */,
+				185A3FC8281D669D009331E6 /* SupportingFiles */,
+				185A3FC0281D652F009331E6 /* Components */,
+				185A3FBF281D651D009331E6 /* AppDelegates */,
 			);
 			path = TringConnect;
 			sourceTree = "<group>";
@@ -151,7 +207,6 @@
 				35A0280F11059B8AFA69D64F /* Pods-TringConnect.debug.xcconfig */,
 				582B4BBED0D19D460F2C0131 /* Pods-TringConnect.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -262,9 +317,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187BF815281CFF7E00A0C2E2 /* LaunchScreen.storyboard in Resources */,
+				185A3FC5281D65F6009331E6 /* TCHomeViewController.storyboard in Resources */,
+				187BF815281CFF7E00A0C2E2 /* TCLaunchScreen.storyboard in Resources */,
 				187BF812281CFF7E00A0C2E2 /* Assets.xcassets in Resources */,
-				187BF80D281CFF7D00A0C2E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187BF80A281CFF7D00A0C2E2 /* ViewController.swift in Sources */,
+				185A3FC7281D6627009331E6 /* TCHomeViewController.swift in Sources */,
 				187BF806281CFF7D00A0C2E2 /* AppDelegate.swift in Sources */,
 				187BF808281CFF7D00A0C2E2 /* SceneDelegate.swift in Sources */,
 				187BF810281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld in Sources */,
@@ -371,20 +426,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		187BF80B281CFF7D00A0C2E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				187BF80C281CFF7D00A0C2E2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		187BF813281CFF7E00A0C2E2 /* LaunchScreen.storyboard */ = {
+		187BF813281CFF7E00A0C2E2 /* TCLaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				187BF814281CFF7E00A0C2E2 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = TCLaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -515,10 +562,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TringConnect/Info.plist;
+				INFOPLIST_FILE = /Users/apple/Documents/TringConnect/TringConnect/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = TCLaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = TCHomeViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -543,10 +590,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TringConnect/Info.plist;
+				INFOPLIST_FILE = /Users/apple/Documents/TringConnect/TringConnect/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = TCLaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = TCHomeViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
