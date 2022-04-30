@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		185A3FC5281D65F6009331E6 /* TCHomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A3FC4281D65F6009331E6 /* TCHomeViewController.storyboard */; };
 		185A3FC7281D6627009331E6 /* TCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A3FC6281D6627009331E6 /* TCHomeViewController.swift */; };
+		185A3FD4281D7035009331E6 /* TCNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A3FD3281D7035009331E6 /* TCNetworkService.swift */; };
+		185A3FD6281D7D37009331E6 /* TCContextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A3FD5281D7D37009331E6 /* TCContextItem.swift */; };
 		187BF806281CFF7D00A0C2E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF805281CFF7D00A0C2E2 /* AppDelegate.swift */; };
 		187BF808281CFF7D00A0C2E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF807281CFF7D00A0C2E2 /* SceneDelegate.swift */; };
 		187BF810281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 187BF80E281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld */; };
@@ -17,6 +19,20 @@
 		187BF820281CFF7E00A0C2E2 /* TringConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF81F281CFF7E00A0C2E2 /* TringConnectTests.swift */; };
 		187BF82A281CFF7E00A0C2E2 /* TringConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF829281CFF7E00A0C2E2 /* TringConnectUITests.swift */; };
 		187BF82C281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */; };
+		18CAD7B6281D96E700A07626 /* TCHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7B5281D96E700A07626 /* TCHomeViewModel.swift */; };
+		18CAD7BB281D9C7400A07626 /* TCHighlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7B9281D9C7400A07626 /* TCHighlightTableViewCell.swift */; };
+		18CAD7BC281D9C7400A07626 /* TCHighlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CAD7BA281D9C7400A07626 /* TCHighlightTableViewCell.xib */; };
+		18CAD7C1281D9CFE00A07626 /* TCHighlightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7BF281D9CFE00A07626 /* TCHighlightCollectionViewCell.swift */; };
+		18CAD7C2281D9CFE00A07626 /* TCHighlightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CAD7C0281D9CFE00A07626 /* TCHighlightCollectionViewCell.xib */; };
+		18CAD7C4281D9EA700A07626 /* TCHighlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7C3281D9EA700A07626 /* TCHighlightViewModel.swift */; };
+		18CAD7C9281DA44B00A07626 /* TCStoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7C8281DA44B00A07626 /* TCStoryHeaderView.swift */; };
+		18CAD7CB281DA46100A07626 /* TCStoryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CAD7CA281DA46100A07626 /* TCStoryHeaderView.xib */; };
+		18CAD7CD281DA48600A07626 /* TCStoryFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CAD7CC281DA48600A07626 /* TCStoryFooterView.xib */; };
+		18CAD7CF281DA4A100A07626 /* TCTCStoryFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7CE281DA4A100A07626 /* TCTCStoryFooterView.swift */; };
+		18CAD7D3281DB30500A07626 /* TCCourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7D1281DB30500A07626 /* TCCourseTableViewCell.swift */; };
+		18CAD7D4281DB30500A07626 /* TCCourseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CAD7D2281DB30500A07626 /* TCCourseTableViewCell.xib */; };
+		18CAD7DA281DB4ED00A07626 /* TCCourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7D8281DB4ED00A07626 /* TCCourseCollectionViewCell.swift */; };
+		18CAD7DB281DB4ED00A07626 /* TCCourseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CAD7D9281DB4ED00A07626 /* TCCourseCollectionViewCell.xib */; };
 		8C18BFDE8C8E6BC2DE800527 /* Pods_TringConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8ACF36AB1CC7FC479A9B58 /* Pods_TringConnect.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +56,8 @@
 /* Begin PBXFileReference section */
 		185A3FC4281D65F6009331E6 /* TCHomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TCHomeViewController.storyboard; sourceTree = "<group>"; };
 		185A3FC6281D6627009331E6 /* TCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCHomeViewController.swift; sourceTree = "<group>"; };
+		185A3FD3281D7035009331E6 /* TCNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCNetworkService.swift; sourceTree = "<group>"; };
+		185A3FD5281D7D37009331E6 /* TCContextItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCContextItem.swift; sourceTree = "<group>"; };
 		187BF802281CFF7D00A0C2E2 /* TringConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TringConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187BF805281CFF7D00A0C2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187BF807281CFF7D00A0C2E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +70,20 @@
 		187BF825281CFF7E00A0C2E2 /* TringConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TringConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187BF829281CFF7E00A0C2E2 /* TringConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TringConnectUITests.swift; sourceTree = "<group>"; };
 		187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TringConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18CAD7B5281D96E700A07626 /* TCHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCHomeViewModel.swift; sourceTree = "<group>"; };
+		18CAD7B9281D9C7400A07626 /* TCHighlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCHighlightTableViewCell.swift; sourceTree = "<group>"; };
+		18CAD7BA281D9C7400A07626 /* TCHighlightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCHighlightTableViewCell.xib; sourceTree = "<group>"; };
+		18CAD7BF281D9CFE00A07626 /* TCHighlightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCHighlightCollectionViewCell.swift; sourceTree = "<group>"; };
+		18CAD7C0281D9CFE00A07626 /* TCHighlightCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCHighlightCollectionViewCell.xib; sourceTree = "<group>"; };
+		18CAD7C3281D9EA700A07626 /* TCHighlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCHighlightViewModel.swift; sourceTree = "<group>"; };
+		18CAD7C8281DA44B00A07626 /* TCStoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCStoryHeaderView.swift; sourceTree = "<group>"; };
+		18CAD7CA281DA46100A07626 /* TCStoryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCStoryHeaderView.xib; sourceTree = "<group>"; };
+		18CAD7CC281DA48600A07626 /* TCStoryFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCStoryFooterView.xib; sourceTree = "<group>"; };
+		18CAD7CE281DA4A100A07626 /* TCTCStoryFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCTCStoryFooterView.swift; sourceTree = "<group>"; };
+		18CAD7D1281DB30500A07626 /* TCCourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCourseTableViewCell.swift; sourceTree = "<group>"; };
+		18CAD7D2281DB30500A07626 /* TCCourseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCCourseTableViewCell.xib; sourceTree = "<group>"; };
+		18CAD7D8281DB4ED00A07626 /* TCCourseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCCourseCollectionViewCell.swift; sourceTree = "<group>"; };
+		18CAD7D9281DB4ED00A07626 /* TCCourseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCCourseCollectionViewCell.xib; sourceTree = "<group>"; };
 		1C8ACF36AB1CC7FC479A9B58 /* Pods_TringConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TringConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A0280F11059B8AFA69D64F /* Pods-TringConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TringConnect.debug.xcconfig"; path = "Target Support Files/Pods-TringConnect/Pods-TringConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		582B4BBED0D19D460F2C0131 /* Pods-TringConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TringConnect.release.xcconfig"; path = "Target Support Files/Pods-TringConnect/Pods-TringConnect.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +135,8 @@
 		185A3FC0281D652F009331E6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				18CAD7C5281DA26A00A07626 /* Molecules */,
+				18CAD7B7281D9C0500A07626 /* Organisms */,
 				185A3FC1281D653D009331E6 /* Templates */,
 			);
 			path = Components;
@@ -122,6 +156,7 @@
 			children = (
 				185A3FC4281D65F6009331E6 /* TCHomeViewController.storyboard */,
 				185A3FC6281D6627009331E6 /* TCHomeViewController.swift */,
+				18CAD7B5281D96E700A07626 /* TCHomeViewModel.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -137,6 +172,7 @@
 		185A3FC8281D669D009331E6 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				185A3FD2281D7003009331E6 /* Model */,
 				187BF816281CFF7E00A0C2E2 /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -149,6 +185,30 @@
 				187BF80E281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		185A3FD0281D6FD0009331E6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				185A3FD1281D6FD8009331E6 /* NetworkService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		185A3FD1281D6FD8009331E6 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				185A3FD3281D7035009331E6 /* TCNetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		185A3FD2281D7003009331E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				185A3FD5281D7D37009331E6 /* TCContextItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		187BF7F9281CFF7D00A0C2E2 = {
@@ -176,6 +236,7 @@
 		187BF804281CFF7D00A0C2E2 /* TringConnect */ = {
 			isa = PBXGroup;
 			children = (
+				185A3FD0281D6FD0009331E6 /* Service */,
 				185A3FC9281D66DB009331E6 /* Resources */,
 				185A3FC8281D669D009331E6 /* SupportingFiles */,
 				185A3FC0281D652F009331E6 /* Components */,
@@ -199,6 +260,97 @@
 				187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */,
 			);
 			path = TringConnectUITests;
+			sourceTree = "<group>";
+		};
+		18CAD7B7281D9C0500A07626 /* Organisms */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7D0281DB2B800A07626 /* CourseView */,
+				18CAD7B8281D9C1C00A07626 /* HighlightView */,
+			);
+			path = Organisms;
+			sourceTree = "<group>";
+		};
+		18CAD7B8281D9C1C00A07626 /* HighlightView */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7BE281D9CCA00A07626 /* CollectionViewCell */,
+				18CAD7BD281D9CB700A07626 /* TableViewCell */,
+				18CAD7C3281D9EA700A07626 /* TCHighlightViewModel.swift */,
+			);
+			path = HighlightView;
+			sourceTree = "<group>";
+		};
+		18CAD7BD281D9CB700A07626 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7B9281D9C7400A07626 /* TCHighlightTableViewCell.swift */,
+				18CAD7BA281D9C7400A07626 /* TCHighlightTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		18CAD7BE281D9CCA00A07626 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7BF281D9CFE00A07626 /* TCHighlightCollectionViewCell.swift */,
+				18CAD7C0281D9CFE00A07626 /* TCHighlightCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		18CAD7C5281DA26A00A07626 /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7C7281DA40000A07626 /* StoryFooterView */,
+				18CAD7C6281DA3E000A07626 /* StoryHeaderView */,
+			);
+			path = Molecules;
+			sourceTree = "<group>";
+		};
+		18CAD7C6281DA3E000A07626 /* StoryHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7C8281DA44B00A07626 /* TCStoryHeaderView.swift */,
+				18CAD7CA281DA46100A07626 /* TCStoryHeaderView.xib */,
+			);
+			path = StoryHeaderView;
+			sourceTree = "<group>";
+		};
+		18CAD7C7281DA40000A07626 /* StoryFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7CC281DA48600A07626 /* TCStoryFooterView.xib */,
+				18CAD7CE281DA4A100A07626 /* TCTCStoryFooterView.swift */,
+			);
+			path = StoryFooterView;
+			sourceTree = "<group>";
+		};
+		18CAD7D0281DB2B800A07626 /* CourseView */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7D6281DB4B500A07626 /* CollectionViewCell */,
+				18CAD7D5281DB4A200A07626 /* TableViewCell */,
+			);
+			path = CourseView;
+			sourceTree = "<group>";
+		};
+		18CAD7D5281DB4A200A07626 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7D2281DB30500A07626 /* TCCourseTableViewCell.xib */,
+				18CAD7D1281DB30500A07626 /* TCCourseTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		18CAD7D6281DB4B500A07626 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18CAD7D8281DB4ED00A07626 /* TCCourseCollectionViewCell.swift */,
+				18CAD7D9281DB4ED00A07626 /* TCCourseCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		82170B8A2581F8D87CACBBDD /* Pods */ = {
@@ -317,9 +469,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CAD7CD281DA48600A07626 /* TCStoryFooterView.xib in Resources */,
+				18CAD7DB281DB4ED00A07626 /* TCCourseCollectionViewCell.xib in Resources */,
 				185A3FC5281D65F6009331E6 /* TCHomeViewController.storyboard in Resources */,
 				187BF815281CFF7E00A0C2E2 /* TCLaunchScreen.storyboard in Resources */,
 				187BF812281CFF7E00A0C2E2 /* Assets.xcassets in Resources */,
+				18CAD7C2281D9CFE00A07626 /* TCHighlightCollectionViewCell.xib in Resources */,
+				18CAD7D4281DB30500A07626 /* TCCourseTableViewCell.xib in Resources */,
+				18CAD7CB281DA46100A07626 /* TCStoryHeaderView.xib in Resources */,
+				18CAD7BC281D9C7400A07626 /* TCHighlightTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,9 +544,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185A3FD4281D7035009331E6 /* TCNetworkService.swift in Sources */,
+				18CAD7CF281DA4A100A07626 /* TCTCStoryFooterView.swift in Sources */,
 				185A3FC7281D6627009331E6 /* TCHomeViewController.swift in Sources */,
 				187BF806281CFF7D00A0C2E2 /* AppDelegate.swift in Sources */,
+				18CAD7BB281D9C7400A07626 /* TCHighlightTableViewCell.swift in Sources */,
+				18CAD7C4281D9EA700A07626 /* TCHighlightViewModel.swift in Sources */,
+				18CAD7DA281DB4ED00A07626 /* TCCourseCollectionViewCell.swift in Sources */,
+				18CAD7D3281DB30500A07626 /* TCCourseTableViewCell.swift in Sources */,
+				185A3FD6281D7D37009331E6 /* TCContextItem.swift in Sources */,
+				18CAD7C9281DA44B00A07626 /* TCStoryHeaderView.swift in Sources */,
+				18CAD7C1281D9CFE00A07626 /* TCHighlightCollectionViewCell.swift in Sources */,
 				187BF808281CFF7D00A0C2E2 /* SceneDelegate.swift in Sources */,
+				18CAD7B6281D96E700A07626 /* TCHomeViewModel.swift in Sources */,
 				187BF810281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
