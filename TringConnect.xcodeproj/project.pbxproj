@@ -17,6 +17,7 @@
 		187BF820281CFF7E00A0C2E2 /* TringConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF81F281CFF7E00A0C2E2 /* TringConnectTests.swift */; };
 		187BF82A281CFF7E00A0C2E2 /* TringConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF829281CFF7E00A0C2E2 /* TringConnectUITests.swift */; };
 		187BF82C281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */; };
+		8C18BFDE8C8E6BC2DE800527 /* Pods_TringConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8ACF36AB1CC7FC479A9B58 /* Pods_TringConnect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		187BF825281CFF7E00A0C2E2 /* TringConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TringConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187BF829281CFF7E00A0C2E2 /* TringConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TringConnectUITests.swift; sourceTree = "<group>"; };
 		187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TringConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1C8ACF36AB1CC7FC479A9B58 /* Pods_TringConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TringConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A0280F11059B8AFA69D64F /* Pods-TringConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TringConnect.debug.xcconfig"; path = "Target Support Files/Pods-TringConnect/Pods-TringConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		582B4BBED0D19D460F2C0131 /* Pods-TringConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TringConnect.release.xcconfig"; path = "Target Support Files/Pods-TringConnect/Pods-TringConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C18BFDE8C8E6BC2DE800527 /* Pods_TringConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180F7BABBDEE6128C071111A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C8ACF36AB1CC7FC479A9B58 /* Pods_TringConnect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		187BF7F9281CFF7D00A0C2E2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				187BF81E281CFF7E00A0C2E2 /* TringConnectTests */,
 				187BF828281CFF7E00A0C2E2 /* TringConnectUITests */,
 				187BF803281CFF7D00A0C2E2 /* Products */,
+				82170B8A2581F8D87CACBBDD /* Pods */,
+				180F7BABBDEE6128C071111A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +145,16 @@
 			path = TringConnectUITests;
 			sourceTree = "<group>";
 		};
+		82170B8A2581F8D87CACBBDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35A0280F11059B8AFA69D64F /* Pods-TringConnect.debug.xcconfig */,
+				582B4BBED0D19D460F2C0131 /* Pods-TringConnect.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187BF82F281CFF7E00A0C2E2 /* Build configuration list for PBXNativeTarget "TringConnect" */;
 			buildPhases = (
+				A5C8D12991F4E6D7E88FA130 /* [CP] Check Pods Manifest.lock */,
 				187BF7FE281CFF7D00A0C2E2 /* Sources */,
 				187BF7FF281CFF7D00A0C2E2 /* Frameworks */,
 				187BF800281CFF7D00A0C2E2 /* Resources */,
+				B71C4DF1DE1DD5D079AF5BCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5C8D12991F4E6D7E88FA130 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TringConnect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71C4DF1DE1DD5D079AF5BCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TringConnect/Pods-TringConnect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TringConnect/Pods-TringConnect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TringConnect/Pods-TringConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		187BF7FE281CFF7D00A0C2E2 /* Sources */ = {
@@ -439,6 +508,7 @@
 		};
 		187BF830281CFF7E00A0C2E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A0280F11059B8AFA69D64F /* Pods-TringConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +536,7 @@
 		};
 		187BF831281CFF7E00A0C2E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582B4BBED0D19D460F2C0131 /* Pods-TringConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
