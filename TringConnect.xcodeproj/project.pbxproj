@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187BF806281CFF7D00A0C2E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF805281CFF7D00A0C2E2 /* AppDelegate.swift */; };
+		187BF808281CFF7D00A0C2E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF807281CFF7D00A0C2E2 /* SceneDelegate.swift */; };
+		187BF80A281CFF7D00A0C2E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF809281CFF7D00A0C2E2 /* ViewController.swift */; };
+		187BF80D281CFF7D00A0C2E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BF80B281CFF7D00A0C2E2 /* Main.storyboard */; };
+		187BF810281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 187BF80E281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld */; };
+		187BF812281CFF7E00A0C2E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187BF811281CFF7E00A0C2E2 /* Assets.xcassets */; };
+		187BF815281CFF7E00A0C2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187BF813281CFF7E00A0C2E2 /* LaunchScreen.storyboard */; };
+		187BF820281CFF7E00A0C2E2 /* TringConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF81F281CFF7E00A0C2E2 /* TringConnectTests.swift */; };
+		187BF82A281CFF7E00A0C2E2 /* TringConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF829281CFF7E00A0C2E2 /* TringConnectUITests.swift */; };
+		187BF82C281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		187BF81C281CFF7E00A0C2E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187BF7FA281CFF7D00A0C2E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187BF801281CFF7D00A0C2E2;
+			remoteInfo = TringConnect;
+		};
+		187BF826281CFF7E00A0C2E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187BF7FA281CFF7D00A0C2E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187BF801281CFF7D00A0C2E2;
+			remoteInfo = TringConnect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		187BF802281CFF7D00A0C2E2 /* TringConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TringConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		187BF805281CFF7D00A0C2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		187BF807281CFF7D00A0C2E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		187BF809281CFF7D00A0C2E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		187BF80C281CFF7D00A0C2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		187BF80F281CFF7D00A0C2E2 /* TringConnect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TringConnect.xcdatamodel; sourceTree = "<group>"; };
+		187BF811281CFF7E00A0C2E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		187BF814281CFF7E00A0C2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		187BF816281CFF7E00A0C2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187BF81B281CFF7E00A0C2E2 /* TringConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TringConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		187BF81F281CFF7E00A0C2E2 /* TringConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TringConnectTests.swift; sourceTree = "<group>"; };
+		187BF825281CFF7E00A0C2E2 /* TringConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TringConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		187BF829281CFF7E00A0C2E2 /* TringConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TringConnectUITests.swift; sourceTree = "<group>"; };
+		187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TringConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187BF7FF281CFF7D00A0C2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BF818281CFF7E00A0C2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BF822281CFF7E00A0C2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		187BF7F9281CFF7D00A0C2E2 = {
+			isa = PBXGroup;
+			children = (
+				187BF804281CFF7D00A0C2E2 /* TringConnect */,
+				187BF81E281CFF7E00A0C2E2 /* TringConnectTests */,
+				187BF828281CFF7E00A0C2E2 /* TringConnectUITests */,
+				187BF803281CFF7D00A0C2E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		187BF803281CFF7D00A0C2E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187BF802281CFF7D00A0C2E2 /* TringConnect.app */,
+				187BF81B281CFF7E00A0C2E2 /* TringConnectTests.xctest */,
+				187BF825281CFF7E00A0C2E2 /* TringConnectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187BF804281CFF7D00A0C2E2 /* TringConnect */ = {
+			isa = PBXGroup;
+			children = (
+				187BF805281CFF7D00A0C2E2 /* AppDelegate.swift */,
+				187BF807281CFF7D00A0C2E2 /* SceneDelegate.swift */,
+				187BF809281CFF7D00A0C2E2 /* ViewController.swift */,
+				187BF80B281CFF7D00A0C2E2 /* Main.storyboard */,
+				187BF811281CFF7E00A0C2E2 /* Assets.xcassets */,
+				187BF813281CFF7E00A0C2E2 /* LaunchScreen.storyboard */,
+				187BF816281CFF7E00A0C2E2 /* Info.plist */,
+				187BF80E281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld */,
+			);
+			path = TringConnect;
+			sourceTree = "<group>";
+		};
+		187BF81E281CFF7E00A0C2E2 /* TringConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				187BF81F281CFF7E00A0C2E2 /* TringConnectTests.swift */,
+			);
+			path = TringConnectTests;
+			sourceTree = "<group>";
+		};
+		187BF828281CFF7E00A0C2E2 /* TringConnectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				187BF829281CFF7E00A0C2E2 /* TringConnectUITests.swift */,
+				187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */,
+			);
+			path = TringConnectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		187BF801281CFF7D00A0C2E2 /* TringConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187BF82F281CFF7E00A0C2E2 /* Build configuration list for PBXNativeTarget "TringConnect" */;
+			buildPhases = (
+				187BF7FE281CFF7D00A0C2E2 /* Sources */,
+				187BF7FF281CFF7D00A0C2E2 /* Frameworks */,
+				187BF800281CFF7D00A0C2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TringConnect;
+			productName = TringConnect;
+			productReference = 187BF802281CFF7D00A0C2E2 /* TringConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		187BF81A281CFF7E00A0C2E2 /* TringConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187BF832281CFF7E00A0C2E2 /* Build configuration list for PBXNativeTarget "TringConnectTests" */;
+			buildPhases = (
+				187BF817281CFF7E00A0C2E2 /* Sources */,
+				187BF818281CFF7E00A0C2E2 /* Frameworks */,
+				187BF819281CFF7E00A0C2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187BF81D281CFF7E00A0C2E2 /* PBXTargetDependency */,
+			);
+			name = TringConnectTests;
+			productName = TringConnectTests;
+			productReference = 187BF81B281CFF7E00A0C2E2 /* TringConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		187BF824281CFF7E00A0C2E2 /* TringConnectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187BF835281CFF7E00A0C2E2 /* Build configuration list for PBXNativeTarget "TringConnectUITests" */;
+			buildPhases = (
+				187BF821281CFF7E00A0C2E2 /* Sources */,
+				187BF822281CFF7E00A0C2E2 /* Frameworks */,
+				187BF823281CFF7E00A0C2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187BF827281CFF7E00A0C2E2 /* PBXTargetDependency */,
+			);
+			name = TringConnectUITests;
+			productName = TringConnectUITests;
+			productReference = 187BF825281CFF7E00A0C2E2 /* TringConnectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		187BF7FA281CFF7D00A0C2E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = TC;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					187BF801281CFF7D00A0C2E2 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					187BF81A281CFF7E00A0C2E2 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 187BF801281CFF7D00A0C2E2;
+					};
+					187BF824281CFF7E00A0C2E2 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 187BF801281CFF7D00A0C2E2;
+					};
+				};
+			};
+			buildConfigurationList = 187BF7FD281CFF7D00A0C2E2 /* Build configuration list for PBXProject "TringConnect" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 187BF7F9281CFF7D00A0C2E2;
+			productRefGroup = 187BF803281CFF7D00A0C2E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				187BF801281CFF7D00A0C2E2 /* TringConnect */,
+				187BF81A281CFF7E00A0C2E2 /* TringConnectTests */,
+				187BF824281CFF7E00A0C2E2 /* TringConnectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		187BF800281CFF7D00A0C2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BF815281CFF7E00A0C2E2 /* LaunchScreen.storyboard in Resources */,
+				187BF812281CFF7E00A0C2E2 /* Assets.xcassets in Resources */,
+				187BF80D281CFF7D00A0C2E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BF819281CFF7E00A0C2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BF823281CFF7E00A0C2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187BF7FE281CFF7D00A0C2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BF80A281CFF7D00A0C2E2 /* ViewController.swift in Sources */,
+				187BF806281CFF7D00A0C2E2 /* AppDelegate.swift in Sources */,
+				187BF808281CFF7D00A0C2E2 /* SceneDelegate.swift in Sources */,
+				187BF810281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BF817281CFF7E00A0C2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BF820281CFF7E00A0C2E2 /* TringConnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187BF821281CFF7E00A0C2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BF82C281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift in Sources */,
+				187BF82A281CFF7E00A0C2E2 /* TringConnectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		187BF81D281CFF7E00A0C2E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187BF801281CFF7D00A0C2E2 /* TringConnect */;
+			targetProxy = 187BF81C281CFF7E00A0C2E2 /* PBXContainerItemProxy */;
+		};
+		187BF827281CFF7E00A0C2E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187BF801281CFF7D00A0C2E2 /* TringConnect */;
+			targetProxy = 187BF826281CFF7E00A0C2E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		187BF80B281CFF7D00A0C2E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187BF80C281CFF7D00A0C2E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		187BF813281CFF7E00A0C2E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187BF814281CFF7E00A0C2E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		187BF82D281CFF7E00A0C2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		187BF82E281CFF7E00A0C2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		187BF830281CFF7E00A0C2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TringConnect/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tringconnect.TringConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		187BF831281CFF7E00A0C2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TringConnect/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tringconnect.TringConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		187BF833281CFF7E00A0C2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tringconnect.TringConnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TringConnect.app/TringConnect";
+			};
+			name = Debug;
+		};
+		187BF834281CFF7E00A0C2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tringconnect.TringConnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TringConnect.app/TringConnect";
+			};
+			name = Release;
+		};
+		187BF836281CFF7E00A0C2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tringconnect.TringConnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TringConnect;
+			};
+			name = Debug;
+		};
+		187BF837281CFF7E00A0C2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tringconnect.TringConnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TringConnect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187BF7FD281CFF7D00A0C2E2 /* Build configuration list for PBXProject "TringConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187BF82D281CFF7E00A0C2E2 /* Debug */,
+				187BF82E281CFF7E00A0C2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187BF82F281CFF7E00A0C2E2 /* Build configuration list for PBXNativeTarget "TringConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187BF830281CFF7E00A0C2E2 /* Debug */,
+				187BF831281CFF7E00A0C2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187BF832281CFF7E00A0C2E2 /* Build configuration list for PBXNativeTarget "TringConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187BF833281CFF7E00A0C2E2 /* Debug */,
+				187BF834281CFF7E00A0C2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187BF835281CFF7E00A0C2E2 /* Build configuration list for PBXNativeTarget "TringConnectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187BF836281CFF7E00A0C2E2 /* Debug */,
+				187BF837281CFF7E00A0C2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		187BF80E281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				187BF80F281CFF7D00A0C2E2 /* TringConnect.xcdatamodel */,
+			);
+			currentVersion = 187BF80F281CFF7D00A0C2E2 /* TringConnect.xcdatamodel */;
+			path = TringConnect.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 187BF7FA281CFF7D00A0C2E2 /* Project object */;
+}
