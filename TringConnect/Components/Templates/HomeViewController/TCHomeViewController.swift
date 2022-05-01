@@ -23,7 +23,7 @@ class TCHomeViewController: UIViewController {
         
         intialSetup()
         
-        viewModel.getHomeItems(TCConstants.homeUrl) { [weak self] isSuccess, error in
+        viewModel.getHomeItems(TCAppConfigurationManager.shared.homeUrl) { [weak self] isSuccess, error in
             if isSuccess {
                 self?.homepageTableView.reloadData()
             }
@@ -54,9 +54,9 @@ class TCHomeViewController: UIViewController {
         let searchImage = UIImage(named: TCConstants.searchButton)?.withRenderingMode(.alwaysOriginal)
         let hamburgerImage = UIImage(named: TCConstants.hamburgerButton)?.withRenderingMode(.alwaysOriginal)
         
-        let notificationButton = createCustopmButton(with: notificationImage, and: #selector(notificationButtonTapped(sender:)))
-        let searchButton = createCustopmButton(with: searchImage, and: #selector(searchButtonTapped(sender:)))
-        let hamburgerButton = createCustopmButton(with: hamburgerImage, and: #selector(hamburgerButtonTapped(sender:)))
+        let notificationButton = createCustopmButton(with: notificationImage, and: #selector(notificationButtonTapped))
+        let searchButton = createCustopmButton(with: searchImage, and: #selector(searchButtonTapped))
+        let hamburgerButton = createCustopmButton(with: hamburgerImage, and: #selector(hamburgerButtonTapped))
 
         // Bar button
         customSearchButton = UIBarButtonItem(customView: searchButton)
@@ -99,17 +99,16 @@ extension TCHomeViewController {
         return button
     }
     
-    @objc func notificationButtonTapped(sender: AnyObject)
-    {
+    @objc func notificationButtonTapped() {
         customNotificationButton.hasUnread = !customNotificationButton.hasUnread
     }
     
-    @objc func searchButtonTapped(sender: AnyObject){
+    @objc func searchButtonTapped() {
         let screenType = "Search screen"
         presentPlacholderViewController(screenType)
     }
     
-    @objc func hamburgerButtonTapped(sender: AnyObject){
+    @objc func hamburgerButtonTapped() {
         let screenType = "Hamburger menu screen"
         presentPlacholderViewController(screenType)
     }
