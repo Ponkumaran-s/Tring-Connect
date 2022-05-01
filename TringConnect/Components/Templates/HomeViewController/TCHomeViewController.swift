@@ -34,7 +34,10 @@ class TCHomeViewController: UIViewController {
     private func intialSetup() {
         homepageTableView.delegate = self
         homepageTableView.dataSource = self
+        self.tabBarController?.tabBar.isTranslucent = false
+
         registerTableViewCells()
+        addLogoToNavigationBar()
         addNavigationBaritems()
     }
     
@@ -46,6 +49,12 @@ class TCHomeViewController: UIViewController {
             let cellNib = UINib(nibName: nib, bundle: nil)
             homepageTableView.register(cellNib, forCellReuseIdentifier: nib)
         }
+    }
+    
+    func addLogoToNavigationBar() {
+        let logo = UIImage(named: "AppLogo")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
     }
     
     func addNavigationBaritems() {
@@ -85,7 +94,7 @@ extension TCHomeViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
         
-        return viewModel.getTableViewCell(for: homeItem, tableView, indexPath)
+        return viewModel.getTableViewCell(for: homeItem, tableView, indexPath, self)
     }
 }
 
@@ -119,4 +128,14 @@ extension TCHomeViewController {
         viewController.centerText = title
         self.present(viewController, animated: true, completion: nil)
     }
+}
+
+extension TCHomeViewController: TCStoryImageIntractionDelegate {
+    func imageTapped(imagedata: String) {
+        let showItemStoryboard = UIStoryboard(name: TCImageDetailViewController.controllerID, bundle: nil)
+        let viewController = showItemStoryboard.instantiateViewController(withIdentifier: TCImageDetailViewController.controllerID) as! TCImageDetailViewController
+        viewController.imagedata = imagedata
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
 }

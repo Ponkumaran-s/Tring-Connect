@@ -37,6 +37,8 @@
 		187BF820281CFF7E00A0C2E2 /* TringConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF81F281CFF7E00A0C2E2 /* TringConnectTests.swift */; };
 		187BF82A281CFF7E00A0C2E2 /* TringConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF829281CFF7E00A0C2E2 /* TringConnectUITests.swift */; };
 		187BF82C281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */; };
+		1895CFF2281F1098004815CE /* TCImageDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1895CFF1281F1098004815CE /* TCImageDetailViewController.storyboard */; };
+		1895CFF4281F10C3004815CE /* TCImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895CFF3281F10C3004815CE /* TCImageDetailViewController.swift */; };
 		18CAD7B6281D96E700A07626 /* TCHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7B5281D96E700A07626 /* TCHomeViewModel.swift */; };
 		18CAD7BB281D9C7400A07626 /* TCHighlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7B9281D9C7400A07626 /* TCHighlightTableViewCell.swift */; };
 		18CAD7BC281D9C7400A07626 /* TCHighlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CAD7BA281D9C7400A07626 /* TCHighlightTableViewCell.xib */; };
@@ -106,6 +108,8 @@
 		187BF825281CFF7E00A0C2E2 /* TringConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TringConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187BF829281CFF7E00A0C2E2 /* TringConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TringConnectUITests.swift; sourceTree = "<group>"; };
 		187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TringConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1895CFF1281F1098004815CE /* TCImageDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TCImageDetailViewController.storyboard; sourceTree = "<group>"; };
+		1895CFF3281F10C3004815CE /* TCImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCImageDetailViewController.swift; sourceTree = "<group>"; };
 		18CAD7B5281D96E700A07626 /* TCHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCHomeViewModel.swift; sourceTree = "<group>"; };
 		18CAD7B9281D9C7400A07626 /* TCHighlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCHighlightTableViewCell.swift; sourceTree = "<group>"; };
 		18CAD7BA281D9C7400A07626 /* TCHighlightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCHighlightTableViewCell.xib; sourceTree = "<group>"; };
@@ -246,9 +250,10 @@
 		185A3FC1281D653D009331E6 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				1818DA0E281EF06500CB0BE9 /* PlaceholderController */,
-				185A3FC3281D6594009331E6 /* LaunchScreen */,
 				185A3FC2281D6549009331E6 /* HomeViewController */,
+				185A3FC3281D6594009331E6 /* LaunchScreen */,
+				1895CFF0281F106C004815CE /* ImageDetailViewController */,
+				1818DA0E281EF06500CB0BE9 /* PlaceholderController */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -366,6 +371,15 @@
 				187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */,
 			);
 			path = TringConnectUITests;
+			sourceTree = "<group>";
+		};
+		1895CFF0281F106C004815CE /* ImageDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1895CFF1281F1098004815CE /* TCImageDetailViewController.storyboard */,
+				1895CFF3281F10C3004815CE /* TCImageDetailViewController.swift */,
+			);
+			path = ImageDetailViewController;
 			sourceTree = "<group>";
 		};
 		18CAD7B7281D9C0500A07626 /* Organisms */ = {
@@ -587,6 +601,7 @@
 				187BF815281CFF7E00A0C2E2 /* TCLaunchScreen.storyboard in Resources */,
 				1818D9FE281E5A0000CB0BE9 /* TCHybridStoryTableViewCell.xib in Resources */,
 				1818D9F9281E59C700CB0BE9 /* TCDefaultStoryTableViewCell.xib in Resources */,
+				1895CFF2281F1098004815CE /* TCImageDetailViewController.storyboard in Resources */,
 				187BF812281CFF7E00A0C2E2 /* Assets.xcassets in Resources */,
 				18CAD7C2281D9CFE00A07626 /* TCHighlightCollectionViewCell.xib in Resources */,
 				18CAD7D4281DB30500A07626 /* TCCourseTableViewCell.xib in Resources */,
@@ -672,6 +687,7 @@
 				1818DA0B281EACF300CB0BE9 /* TCStoryFooterViewModel.swift in Sources */,
 				1818DA01281E5A2700CB0BE9 /* TCPromotionStoryTableViewCell.swift in Sources */,
 				18CAD7C4281D9EA700A07626 /* TCHighlightViewModel.swift in Sources */,
+				1895CFF4281F10C3004815CE /* TCImageDetailViewController.swift in Sources */,
 				1818DA0D281EAD0F00CB0BE9 /* TCStoryHeaderViewModel.swift in Sources */,
 				18CAD7DA281DB4ED00A07626 /* TCCourseCollectionViewCell.swift in Sources */,
 				18CAD7D3281DB30500A07626 /* TCCourseTableViewCell.swift in Sources */,

@@ -30,8 +30,8 @@
             filePath = "TringConnect/Components/Templates/HomeViewController/TCHomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "notificationButtonTapped()"
             landmarkType = "7">
          </BreakpointContent>
@@ -39,17 +39,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DD4B75D9-796A-4D75-94A3-37B48CEDCDB0"
+            uuid = "B88B8413-2102-4F89-B5F8-AC3782A0B68E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TringConnect/SupportingFiles/Models/TCAppConfiguration.swift"
+            filePath = "TringConnect/Components/Organisms/StoryView/TCHybridStoryView/TCHybridStoryTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "homeUrl"
-            landmarkType = "24">
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "imagViewTapped(sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

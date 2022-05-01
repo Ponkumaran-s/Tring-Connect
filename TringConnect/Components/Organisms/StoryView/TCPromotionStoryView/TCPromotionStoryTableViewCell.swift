@@ -17,6 +17,9 @@ class TCPromotionStoryTableViewCell: UITableViewCell, TCStoryTableViewCell  {
     @IBOutlet weak var promotionTitleLabel: UILabel!
     @IBOutlet weak var promotionSubtitleLabel: UILabel!
     @IBOutlet weak var storyFooterView: TCStoryFooterView!
+    
+    weak var delegate: TCStoryImageIntractionDelegate?
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -38,5 +41,9 @@ extension TCPromotionStoryTableViewCell {
         promotionSubtitleLabel.text = viewModel.getPromotionSubtitle
         storyFooterView.configureFooterView(with: viewModel.getTimestamp, and: viewModel.getStoryImpressions)
         storyHeaderView.configureHeaderView(with: item)
+    }
+    
+    @objc func imagViewTapped() {
+        delegate?.imageTapped(imagedata: viewModel.getStoryDisplayImage)
     }
 }

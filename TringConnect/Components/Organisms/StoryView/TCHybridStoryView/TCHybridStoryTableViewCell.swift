@@ -18,9 +18,12 @@ class TCHybridStoryTableViewCell: UITableViewCell, TCStoryTableViewCell  {
     @IBOutlet weak var storyFourthImageView: UIImageView!
     @IBOutlet weak var storyFooterView: TCStoryFooterView!
     
+    weak var delegate: TCStoryImageIntractionDelegate?
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        addGestureForImageView()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -29,6 +32,27 @@ class TCHybridStoryTableViewCell: UITableViewCell, TCStoryTableViewCell  {
         // Configure the view for the selected state
     }
     
+    func addGestureForImageView() {
+        let firstImageTapGesture = UITapGestureRecognizer(target: self, action: #selector(imagViewTapped(sender:)))
+        storyFirstImageView.tag = 0
+        storyFirstImageView.addGestureRecognizer(firstImageTapGesture)
+        storyFirstImageView.isUserInteractionEnabled = true
+        
+        let secondImageTapGesture = UITapGestureRecognizer(target: self, action: #selector(imagViewTapped(sender:)))
+        storySecondImageView.tag = 1
+        storySecondImageView.addGestureRecognizer(secondImageTapGesture)
+        storySecondImageView.isUserInteractionEnabled = true
+    
+        let thirdImageTapGesture = UITapGestureRecognizer(target: self, action: #selector(imagViewTapped(sender:)))
+        storyThirdImageView.tag = 2
+        storyThirdImageView.addGestureRecognizer(thirdImageTapGesture)
+        storyThirdImageView.isUserInteractionEnabled = true
+        
+        let fourthImageTapGesture = UITapGestureRecognizer(target: self, action: #selector(imagViewTapped(sender:)))
+        storyFourthImageView.tag = 3
+        storyFourthImageView.addGestureRecognizer(fourthImageTapGesture)
+        storyFourthImageView.isUserInteractionEnabled = true
+    }
 }
 
 extension TCHybridStoryTableViewCell {
@@ -41,4 +65,11 @@ extension TCHybridStoryTableViewCell {
         storyFooterView.configureFooterView(with: viewModel.getTimestamp, and: viewModel.getStoryImpressions)
         storyHeaderView.configureHeaderView(with: item)
     }
+    
+    @objc func imagViewTapped(sender: AnyObject) {
+        guard let index = sender.view?.tag else { return }
+        delegate?.imageTapped(imagedata: viewModel.getHybridStoryImages[index])
+    }
+    
+
 }

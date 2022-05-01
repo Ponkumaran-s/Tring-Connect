@@ -34,7 +34,7 @@ class TCHomeViewModel {
          TCHomeItemType.post.getCellIDForHomeItem(.hybrid)]
     }
     
-    func getTableViewCell(for homeItem: TCHomeItem,_ tableview: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+    func getTableViewCell(for homeItem: TCHomeItem,_ tableview: UITableView, _ indexPath: IndexPath, _ parentController: TCHomeViewController) -> UITableViewCell {
         
         guard let kind = homeItem.kind else { return UITableViewCell() }
         
@@ -46,6 +46,7 @@ class TCHomeViewModel {
             guard let cell = tableview.dequeueReusableCell(withIdentifier: homeItemType.getCellIDForHomeItem(storyItem.getStoryType), for: indexPath) as? TCStoryTableViewCell else {
                 return UITableViewCell()
             }
+            cell.delegate = parentController
             cell.configureCell(with: storyItem)
             return cell
             

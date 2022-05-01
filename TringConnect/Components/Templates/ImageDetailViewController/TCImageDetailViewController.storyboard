@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TCImageDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="TCImageDetailViewController" customModule="TringConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oid-bC-PpZ">
+                                <rect key="frame" x="0.0" y="269" width="414" height="358"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.034334838390350342" green="0.0065519744530320168" blue="0.012466059997677803" alpha="0.20310751807610719" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oid-bC-PpZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4Cp-R2-EzH"/>
+                            <constraint firstItem="Oid-bC-PpZ" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.4" id="Ylg-N4-RkX"/>
+                            <constraint firstAttribute="trailing" secondItem="Oid-bC-PpZ" secondAttribute="trailing" id="bHk-JD-JRU"/>
+                            <constraint firstItem="Oid-bC-PpZ" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="f4X-aQ-h2y"/>
+                            <constraint firstItem="Oid-bC-PpZ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="pqP-QT-iuP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageDetailView" destination="Oid-bC-PpZ" id="aia-sM-3l0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="74"/>
+        </scene>
+    </scenes>
+</document>

@@ -12,7 +12,11 @@ protocol TCHomeTableViewCell: UITableViewCell {
 }
 
 protocol TCStoryTableViewCell: TCHomeTableViewCell {
-    
+    var delegate: TCStoryImageIntractionDelegate? { get set }
+}
+
+protocol TCStoryImageIntractionDelegate: NSObjectProtocol {
+    func imageTapped(imagedata: String)
 }
 
 class TCDefaultStoryTableViewCell: UITableViewCell, TCStoryTableViewCell {
@@ -23,9 +27,13 @@ class TCDefaultStoryTableViewCell: UITableViewCell, TCStoryTableViewCell {
     @IBOutlet weak var storyImageView: UIImageView!
     @IBOutlet weak var storyFooterView: TCStoryFooterView!
     
+    weak var delegate: TCStoryImageIntractionDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        let tap = UITapGestureRecognizer(target: self, action: #selector(imagViewTapped))
+        storyImageView.addGestureRecognizer(tap)
+        storyImageView.isUserInteractionEnabled = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -42,5 +50,9 @@ extension TCDefaultStoryTableViewCell {
         storyImageView.image = UIImage(named: viewModel.getStoryDisplayImage)
         storyFooterView.configureFooterView(with: viewModel.getTimestamp, and: viewModel.getStoryImpressions)
         storyHeaderView.configureHeaderView(with: item)
+    }
+    
+    @objc func imagViewTapped() {
+        delegate?.imageTapped(imagedata: viewModel.getStoryDisplayImage)
     }
 }
