@@ -16,7 +16,7 @@ struct NBCParserUtility {
         case parsingError
     }
     
-    static func getInfoDictFromPlist<T>(_ name: String, _ type: T.Type) -> Result<T, Error> where T: Decodable {
+    static func getInfoDictFromPlist<T>(_ name: String, _ : T.Type) -> Result<T, Error> where T: Decodable {
         guard let commonConfigPath = Bundle.main.path(forResource: name, ofType: kTypePlist) else {
             return .failure(ParserError.fileNotFound)
         }
