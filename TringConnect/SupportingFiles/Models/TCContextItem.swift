@@ -40,7 +40,7 @@ struct TCContextItem: Decodable {
 
     static func parseContextItems<Key: CodingKey>(_ container: KeyedDecodingContainer<Key>, _ key: Key) -> [TCHomeItem] {
         var contextItems = [TCHomeItem]()
-        var family: NBCHomeItemType?
+        var family: TCHomeItemType?
         guard var nestedUnKeyedContainer = try? container.nestedUnkeyedContainer(forKey: key) else {
             return contextItems
         }
@@ -50,7 +50,7 @@ struct TCContextItem: Decodable {
             let typeContainer = try? nestedUnKeyedContainer.nestedContainer(keyedBy: TCItemDiscriminator.self)
             
             do {
-                family = try typeContainer?.decode(NBCHomeItemType.self, forKey: NBCHomeItemType.discriminator)
+                family = try typeContainer?.decode(TCHomeItemType.self, forKey: TCHomeItemType.discriminator)
             } catch {
                 print("Failed to receive the kind")
             }
@@ -111,6 +111,12 @@ struct TCStoryItem: TCHomeItem {
     var hashTags: String?
     var timestamp: String?
     var likesAndComments: TCLikesAndComments?
+    
+    var getStoryType: TCPostItemType {
+        guard let type = self.storyType else { return .normal}
+        
+        return TCPostItemType(rawValue: type)
+    }
 }
 
 struct TCAttachmentItem: Decodable {
@@ -130,7 +136,7 @@ struct TCPromotiontItem: Decodable {
         case promotionsDP
     }
 
-    var promotionsTitle: [String?]?
+    var promotionsTitle: String?
     var promotionsSubtitle: String?
     var promotionsDP: String?
 }
@@ -191,10 +197,51 @@ struct TCCourse: Decodable {
     var courseDP: String?
 }
 
-enum NBCHomeItemType: String, Decodable {
+enum TCHomeItemType: String, Decodable {
     case highlight
     case post
     case course
 
     static var discriminator: TCItemDiscriminator = .kind
+    
+    func getCellIDForHomeItem(_ storyType: TCPostItemType = .normal) -> String {
+        switch self {
+        case .highlight:
+            return "TCHighlightTableViewCell"
+        case .post:
+            return storyType.getCellIDForPostItem()
+        case .course:
+            return "TCCourseTableViewCell"
+        }
+    }
+}
+
+enum TCPostItemType: String, Decodable {
+    case normal
+    case hybrid
+    case promotion
+    
+    init(rawValue: String) {
+        switch rawValue {
+        case "normal":
+            self = .normal
+        case "hybrid":
+            self = .hybrid
+        case "promotion":
+            self = .promotion
+        default:
+            self = .normal
+        }
+    }
+    
+    func getCellIDForPostItem() -> String {
+        switch self {
+        case .normal:
+            return "TCDefaultStoryTableViewCell"
+        case .hybrid:
+            return "TCHybridStoryTableViewCell"
+        case .promotion:
+            return "TCPromotionStoryTableViewCell"
+        }
+    }
 }
