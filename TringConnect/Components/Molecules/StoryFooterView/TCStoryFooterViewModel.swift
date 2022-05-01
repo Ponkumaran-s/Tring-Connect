@@ -27,7 +27,15 @@ class TCStoryFooterViewModel {
         impressions?.recentLikes ?? ""
     }
     
-    var getRececntLikedList: String {
-        "Liked by \(getRecentlyLikedUser) and \(getLikesCount) others"
+    func calculateLikeCount(_ isLiked: Bool) -> String {
+        let likeCount: Int = impressions?.likesCount ?? 0
+        
+        let currentCount = isLiked ? likeCount + 1 : likeCount 
+        
+        return String(currentCount)
+    }
+    
+    func getRececntLikedList(_ count: String?) -> String {
+        "Liked by \(getRecentlyLikedUser) and \(count ?? "") others"
     }
 }

@@ -5,12 +5,13 @@
 //  Created by Ponkumar's Mac on 01/05/22.
 //
 
-import Foundation
+import UIKit
 
 class TCStoryViewModel {
     
     private var storyItem: TCStoryItem?
     
+    let buttonBorderColor: CGColor = UIColor(named: "AppColor")?.cgColor ?? UIColor.green.cgColor
     var getStoryDisplayImage: String {
         storyItem?.storyAttachments?.storyImages?[0] ?? ""
     }

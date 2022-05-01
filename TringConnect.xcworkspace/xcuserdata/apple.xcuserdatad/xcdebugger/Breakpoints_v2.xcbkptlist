@@ -39,16 +39,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B88B8413-2102-4F89-B5F8-AC3782A0B68E"
-            shouldBeEnabled = "Yes"
+            uuid = "8CEB2351-36D5-4F90-86D8-9F39150C6ABB"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TringConnect/Components/Organisms/StoryView/TCHybridStoryView/TCHybridStoryTableViewCell.swift"
+            filePath = "TringConnect/Components/Molecules/StoryFooterView/TCStoryFooterView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "imagViewTapped(sender:)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "likeButtonTapped(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -16,6 +16,8 @@ class TCCourseTableViewCell: UITableViewCell, TCHomeTableViewCell {
     
     private let viewModel = TCCourseViewModel()
     
+    var isOptionButtonEnabled = false
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         intialSrtup()
@@ -32,6 +34,16 @@ class TCCourseTableViewCell: UITableViewCell, TCHomeTableViewCell {
         courseCollectionView.register(nib, forCellWithReuseIdentifier: "TCCourseCollectionViewCell")
     }
     
+    @IBAction func optionButtonTapped(sender: AnyObject) {
+        
+        isOptionButtonEnabled.toggle()
+        
+        if isOptionButtonEnabled {
+            optionButton.setImage(UIImage(named: "VerticleDotsSelected"), for: .normal)
+        } else {
+            optionButton.setImage(UIImage(named: "VerticleDotsUnselected"), for: .normal)
+        }
+    }
 }
 
 extension TCCourseTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {

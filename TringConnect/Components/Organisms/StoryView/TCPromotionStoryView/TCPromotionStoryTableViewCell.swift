@@ -23,12 +23,12 @@ class TCPromotionStoryTableViewCell: UITableViewCell, TCStoryTableViewCell  {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        intialSrtup()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func intialSrtup() {
+        promotionKnowMoreButton.layer.borderWidth = 1.0
+        promotionKnowMoreButton.layer.borderColor = viewModel.buttonBorderColor
     }
     
 }

@@ -57,6 +57,9 @@
                         </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="VerticleDotsUnselected"/>
+                        <connections>
+                            <action selector="optionButtonTappedWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tBa-h8-SLQ"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

@@ -39,7 +39,10 @@
                             <constraint firstAttribute="width" constant="24" id="vd5-gu-Cyw"/>
                         </constraints>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="favouriteSelected"/>
+                        <buttonConfiguration key="configuration" style="plain" image="favouriteUnselected"/>
+                        <connections>
+                            <action selector="likeButtonTappedWithSender:" destination="gTV-IL-0wX" eventType="touchUpInside" id="TWE-nl-t2v"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
@@ -69,6 +72,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="favouriteSelected" width="24" height="25"/>
+        <image name="favouriteUnselected" width="24" height="25"/>
     </resources>
 </document>

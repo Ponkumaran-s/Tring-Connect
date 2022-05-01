@@ -43,7 +43,10 @@
                                 <constraint firstAttribute="width" secondItem="H7h-yL-kGJ" secondAttribute="height" multiplier="1:1" id="JAp-ol-kOT"/>
                             </constraints>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="LikeSelected"/>
+                            <buttonConfiguration key="configuration" style="plain" image="LikeUnselected"/>
+                            <connections>
+                                <action selector="likeButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="3HY-jB-VTj"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0W-XM-feZ">
                             <rect key="frame" x="28" y="5" width="31" height="14.5"/>
@@ -174,7 +177,7 @@
         <image name="ActiveUser" width="36" height="36"/>
         <image name="Comment" width="24" height="24"/>
         <image name="CommentArrow" width="24" height="25"/>
-        <image name="LikeSelected" width="24" height="25"/>
+        <image name="LikeUnselected" width="24" height="24"/>
         <image name="user1" width="18" height="17"/>
         <image name="user2" width="18" height="17"/>
         <image name="user3" width="18" height="17"/>

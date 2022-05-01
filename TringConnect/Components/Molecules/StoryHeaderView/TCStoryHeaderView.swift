@@ -12,6 +12,8 @@ class TCStoryHeaderView: UIView {
     private let nibName = "TCStoryHeaderView"
     
     private let viewModel = TCStoryHeaderViewModel()
+    
+    var isOptionButtonEnabled = false
 
     @IBOutlet weak var userProfileImageView: UIImageView!
     @IBOutlet weak var userProfileName: UILabel!
@@ -35,6 +37,16 @@ class TCStoryHeaderView: UIView {
         commonInit(nibName)
     }
 
+    @IBAction func optionButtonTapped(sender: AnyObject) {
+        
+        isOptionButtonEnabled.toggle()
+        
+        if isOptionButtonEnabled {
+            optionButton.setImage(UIImage(named: "VerticleDotsSelected"), for: .normal)
+        } else {
+            optionButton.setImage(UIImage(named: "VerticleDotsUnselected"), for: .normal)
+        }
+    }
 }
 
 extension TCStoryHeaderView {
