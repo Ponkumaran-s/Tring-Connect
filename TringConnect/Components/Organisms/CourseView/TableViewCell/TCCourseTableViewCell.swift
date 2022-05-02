@@ -66,6 +66,7 @@ extension TCCourseTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
 extension TCCourseTableViewCell {
     func configureCell(with item: TCHomeItem) {
         viewModel.setCourseItem(item)
+        courseCollectionView.reloadData()
         storyFooterView.configureFooterView(with: viewModel.getTimestamp, and: viewModel.getCourseImpressions)
     }
 }

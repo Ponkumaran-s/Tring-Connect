@@ -287,11 +287,10 @@
 		185A3FC8281D669D009331E6 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				18AB9974281F729500E95AE4 /* PList */,
 				1818DA07281EA3F300CB0BE9 /* Utilities */,
 				1818D9EF281E505700CB0BE9 /* Constants */,
 				185A3FD2281D7003009331E6 /* Models */,
-				187BF816281CFF7E00A0C2E2 /* Info.plist */,
-				1818DA15281F074300CB0BE9 /* App.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -389,6 +388,15 @@
 				1895CFF3281F10C3004815CE /* TCImageDetailViewController.swift */,
 			);
 			path = ImageDetailViewController;
+			sourceTree = "<group>";
+		};
+		18AB9974281F729500E95AE4 /* PList */ = {
+			isa = PBXGroup;
+			children = (
+				187BF816281CFF7E00A0C2E2 /* Info.plist */,
+				1818DA15281F074300CB0BE9 /* App.plist */,
+			);
+			path = PList;
 			sourceTree = "<group>";
 		};
 		18B3C5D3281F3ED600855682 /* Fonts */ = {
@@ -898,7 +906,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = /Users/apple/Documents/TringConnect/TringConnect/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = /Users/apple/Documents/TringConnect/TringConnect/SupportingFiles/PList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = TCLaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = TCHomeViewController;
@@ -926,7 +934,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = /Users/apple/Documents/TringConnect/TringConnect/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = /Users/apple/Documents/TringConnect/TringConnect/SupportingFiles/PList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = TCLaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = TCHomeViewController;

@@ -13,6 +13,7 @@ class TCHomeViewController: UIViewController {
 
     private let viewModel = TCHomeViewModel()
     
+    let refreshControl = UIRefreshControl()
     var customNotificationButton: CustomBarButton!
     var customSearchButton: UIBarButtonItem!
     var customHambergerButton: UIBarButtonItem!
@@ -22,12 +23,8 @@ class TCHomeViewController: UIViewController {
         super.viewDidLoad()
         
         intialSetup()
+        getHomeData()
         
-        viewModel.getHomeItems(TCAppConfigurationManager.shared.homeUrl) { [weak self] isSuccess, error in
-            if isSuccess {
-                self?.homepageTableView.reloadData()
-            }
-        }
         
     }
 
@@ -39,6 +36,18 @@ class TCHomeViewController: UIViewController {
         registerTableViewCells()
         addLogoToNavigationBar()
         addNavigationBaritems()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        homepageTableView.addSubview(refreshControl)
+    }
+    
+    private func getHomeData() {
+        viewModel.getHomeItems(TCAppConfigurationManager.shared.homeUrl) { [weak self] isSuccess, error in
+            guard let weakSelf = self else { return }
+            if isSuccess {
+                weakSelf.homepageTableView.reloadData()
+            }
+        }
     }
     
     func registerTableViewCells() {
@@ -106,6 +115,11 @@ extension TCHomeViewController {
         button.setBackgroundImage(image, for: .normal)
         button.addTarget(self, action: selector, for: .touchUpInside)
         return button
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        getHomeData()
+        refreshControl.endRefreshing()
     }
     
     @objc func notificationButtonTapped() {

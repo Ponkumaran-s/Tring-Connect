@@ -57,10 +57,15 @@ extension TCStoryFooterView {
 
     func configureFooterView(with timestamp: String, and impressions: TCLikesAndComments) {
         viewModel.setImpresssionItem(impressions)
+        resetCell()
         timeStampLabel.text = timestamp
         likeCountLabel.text = viewModel.calculateLikeCount(isLikeEnabled)
         commentCountLabel.text = viewModel.getCommentsCount
         likeListLabel.text = viewModel.getRececntLikedList(likeCountLabel.text)
     }
-
+    
+    private func resetCell() {
+        isLikeEnabled = false
+        likeButton.setImage(UIImage(named: "LikeUnselected"), for: .normal)
+    }
 }

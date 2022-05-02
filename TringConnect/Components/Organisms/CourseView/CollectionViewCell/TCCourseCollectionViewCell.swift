@@ -38,8 +38,14 @@ class TCCourseCollectionViewCell: UICollectionViewCell {
 extension TCCourseCollectionViewCell {
     
     func configureCell(with item: TCCourse) {
+        resetCell()
         courseImageView.image = UIImage(named: item.courseDP ?? "")
         courseTitle.text = item.courseDescription
+    }
+
+    private func resetCell() {
+        isLikeEnabled = false
+        favouriteButton.setImage(UIImage(named: "favouriteUnselected"), for: .normal)
     }
 
 }

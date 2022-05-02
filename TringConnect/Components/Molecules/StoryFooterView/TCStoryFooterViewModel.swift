@@ -20,7 +20,7 @@ class TCStoryFooterViewModel {
     }
     
     var getCommentsCount: String {
-        String(impressions?.likesCount ?? 0)
+        String(impressions?.commentsCount ?? 0)
     }
     
     var getRecentlyLikedUser: String {
