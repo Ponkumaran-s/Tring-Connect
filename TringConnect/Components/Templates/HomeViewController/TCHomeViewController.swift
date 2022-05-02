@@ -36,9 +36,7 @@ class TCHomeViewController: UIViewController {
         registerTableViewCells()
         addLogoToNavigationBar()
         addNavigationBaritems()
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
-        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
-        homepageTableView.addSubview(refreshControl)
+        addRefreshControl()
     }
     
     private func getHomeData() {
@@ -48,6 +46,12 @@ class TCHomeViewController: UIViewController {
                 weakSelf.homepageTableView.reloadData()
             }
         }
+    }
+    
+    private func addRefreshControl() {
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh), for: .valueChanged)
+        homepageTableView.addSubview(refreshControl)
     }
     
     func registerTableViewCells() {
@@ -117,7 +121,7 @@ extension TCHomeViewController {
         return button
     }
     
-    @objc func refresh(_ sender: AnyObject) {
+    @objc func refresh() {
         getHomeData()
         refreshControl.endRefreshing()
     }
