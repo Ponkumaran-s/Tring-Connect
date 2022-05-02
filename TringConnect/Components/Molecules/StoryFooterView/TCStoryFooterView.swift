@@ -36,6 +36,7 @@ class TCStoryFooterView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         commonInit(nibName)
+        commentTextField.delegate = self
     }
     
     @IBAction func likeButtonTapped(sender: AnyObject) {
@@ -67,5 +68,13 @@ extension TCStoryFooterView {
     private func resetCell() {
         isLikeEnabled = false
         likeButton.setImage(UIImage(named: "LikeUnselected"), for: .normal)
+    }
+}
+
+extension TCStoryFooterView: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        textField.text = ""
+        return true
     }
 }

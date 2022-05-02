@@ -120,7 +120,7 @@
                                 <constraint firstAttribute="height" constant="36" id="g6V-hl-s2T"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a comment…" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9nl-wB-Caq">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a comment…" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9nl-wB-Caq">
                             <rect key="frame" x="72" y="45" width="562" height="34"/>
                             <color key="backgroundColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="0.052631504490000001" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>

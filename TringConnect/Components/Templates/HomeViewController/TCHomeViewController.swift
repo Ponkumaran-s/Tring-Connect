@@ -27,6 +27,15 @@ class TCHomeViewController: UIViewController {
         
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        addObserver()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        removeObserver()
+    }
 
     private func intialSetup() {
         homepageTableView.delegate = self
@@ -37,6 +46,8 @@ class TCHomeViewController: UIViewController {
         addLogoToNavigationBar()
         addNavigationBaritems()
         addRefreshControl()
+        addTapGestureForKeyboardDismiss()
+
     }
     
     private func getHomeData() {
@@ -52,6 +63,20 @@ class TCHomeViewController: UIViewController {
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(self.refresh), for: .valueChanged)
         homepageTableView.addSubview(refreshControl)
+    }
+    
+    private func addTapGestureForKeyboardDismiss() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func removeObserver() {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    func addObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     func registerTableViewCells() {
@@ -138,6 +163,24 @@ extension TCHomeViewController {
     @objc func hamburgerButtonTapped() {
         let screenType = "Hamburger menu screen"
         presentPlacholderViewController(screenType)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= (keyboardSize.size.height - self.view.safeAreaInsets.top)
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     private func presentPlacholderViewController(_ title: String){
