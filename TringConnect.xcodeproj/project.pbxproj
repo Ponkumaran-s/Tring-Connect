@@ -39,6 +39,10 @@
 		187BF82C281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */; };
 		1895CFF2281F1098004815CE /* TCImageDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1895CFF1281F1098004815CE /* TCImageDetailViewController.storyboard */; };
 		1895CFF4281F10C3004815CE /* TCImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1895CFF3281F10C3004815CE /* TCImageDetailViewController.swift */; };
+		18B3C5D5281F3F2100855682 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18B3C5D4281F3F2100855682 /* Poppins-Regular.ttf */; };
+		18B3C5D7281F40A000855682 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18B3C5D6281F40A000855682 /* Poppins-SemiBold.ttf */; };
+		18B3C5D9281F412300855682 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18B3C5D8281F412300855682 /* Poppins-Light.ttf */; };
+		18B3C5DB281F421600855682 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18B3C5DA281F421300855682 /* Poppins-Medium.ttf */; };
 		18CAD7B6281D96E700A07626 /* TCHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7B5281D96E700A07626 /* TCHomeViewModel.swift */; };
 		18CAD7BB281D9C7400A07626 /* TCHighlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CAD7B9281D9C7400A07626 /* TCHighlightTableViewCell.swift */; };
 		18CAD7BC281D9C7400A07626 /* TCHighlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CAD7BA281D9C7400A07626 /* TCHighlightTableViewCell.xib */; };
@@ -110,6 +114,10 @@
 		187BF82B281CFF7E00A0C2E2 /* TringConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TringConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1895CFF1281F1098004815CE /* TCImageDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TCImageDetailViewController.storyboard; sourceTree = "<group>"; };
 		1895CFF3281F10C3004815CE /* TCImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCImageDetailViewController.swift; sourceTree = "<group>"; };
+		18B3C5D4281F3F2100855682 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		18B3C5D6281F40A000855682 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		18B3C5D8281F412300855682 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		18B3C5DA281F421300855682 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		18CAD7B5281D96E700A07626 /* TCHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCHomeViewModel.swift; sourceTree = "<group>"; };
 		18CAD7B9281D9C7400A07626 /* TCHighlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCHighlightTableViewCell.swift; sourceTree = "<group>"; };
 		18CAD7BA281D9C7400A07626 /* TCHighlightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCHighlightTableViewCell.xib; sourceTree = "<group>"; };
@@ -291,6 +299,7 @@
 		185A3FC9281D66DB009331E6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18B3C5D3281F3ED600855682 /* Fonts */,
 				187BF811281CFF7E00A0C2E2 /* Assets.xcassets */,
 				187BF80E281CFF7D00A0C2E2 /* TringConnect.xcdatamodeld */,
 			);
@@ -380,6 +389,17 @@
 				1895CFF3281F10C3004815CE /* TCImageDetailViewController.swift */,
 			);
 			path = ImageDetailViewController;
+			sourceTree = "<group>";
+		};
+		18B3C5D3281F3ED600855682 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				18B3C5D8281F412300855682 /* Poppins-Light.ttf */,
+				18B3C5D6281F40A000855682 /* Poppins-SemiBold.ttf */,
+				18B3C5D4281F3F2100855682 /* Poppins-Regular.ttf */,
+				18B3C5DA281F421300855682 /* Poppins-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		18CAD7B7281D9C0500A07626 /* Organisms */ = {
@@ -594,20 +614,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				1818DA02281E5A2700CB0BE9 /* TCPromotionStoryTableViewCell.xib in Resources */,
+				18B3C5D9281F412300855682 /* Poppins-Light.ttf in Resources */,
 				18CAD7CD281DA48600A07626 /* TCStoryFooterView.xib in Resources */,
 				18CAD7DB281DB4ED00A07626 /* TCCourseCollectionViewCell.xib in Resources */,
 				1818DA12281EF0D900CB0BE9 /* TCPlaceholderViewController.storyboard in Resources */,
 				185A3FC5281D65F6009331E6 /* TCHomeViewController.storyboard in Resources */,
 				187BF815281CFF7E00A0C2E2 /* TCLaunchScreen.storyboard in Resources */,
 				1818D9FE281E5A0000CB0BE9 /* TCHybridStoryTableViewCell.xib in Resources */,
+				18B3C5D5281F3F2100855682 /* Poppins-Regular.ttf in Resources */,
 				1818D9F9281E59C700CB0BE9 /* TCDefaultStoryTableViewCell.xib in Resources */,
 				1895CFF2281F1098004815CE /* TCImageDetailViewController.storyboard in Resources */,
 				187BF812281CFF7E00A0C2E2 /* Assets.xcassets in Resources */,
 				18CAD7C2281D9CFE00A07626 /* TCHighlightCollectionViewCell.xib in Resources */,
 				18CAD7D4281DB30500A07626 /* TCCourseTableViewCell.xib in Resources */,
+				18B3C5DB281F421600855682 /* Poppins-Medium.ttf in Resources */,
 				18CAD7CB281DA46100A07626 /* TCStoryHeaderView.xib in Resources */,
 				1818DA16281F074300CB0BE9 /* App.plist in Resources */,
 				18CAD7BC281D9C7400A07626 /* TCHighlightTableViewCell.xib in Resources */,
+				18B3C5D7281F40A000855682 /* Poppins-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

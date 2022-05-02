@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -68,8 +69,20 @@
                     <view key="view" contentMode="scaleToFill" id="gqS-Fh-Vh9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calender screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxF-nW-bPM">
+                                <rect key="frame" x="145" y="437.5" width="124.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AppColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="XJj-vd-vEr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MxF-nW-bPM" firstAttribute="centerY" secondItem="gqS-Fh-Vh9" secondAttribute="centerY" id="0Lc-dB-Bz8"/>
+                            <constraint firstItem="MxF-nW-bPM" firstAttribute="centerX" secondItem="gqS-Fh-Vh9" secondAttribute="centerX" id="b18-qq-xkP"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="CalenderUnselected" selectedImage="CalenderSelected" id="htw-ih-qHw"/>
                 </viewController>
@@ -103,8 +116,20 @@
                     <view key="view" contentMode="scaleToFill" id="nV2-vx-8N7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-zN-xsm">
+                                <rect key="frame" x="145" y="437.5" width="124.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AppColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zge-Up-Vfo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vhE-zN-xsm" firstAttribute="centerX" secondItem="nV2-vx-8N7" secondAttribute="centerX" id="l70-eN-5pf"/>
+                            <constraint firstItem="vhE-zN-xsm" firstAttribute="centerY" secondItem="nV2-vx-8N7" secondAttribute="centerY" id="yUZ-iE-zBu"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="FavoritesUnselected" selectedImage="FavoritesSelected" id="dKr-4A-aBk"/>
                 </viewController>
@@ -119,8 +144,20 @@
                     <view key="view" contentMode="scaleToFill" id="BeL-km-epr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add post screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzR-6u-1dk">
+                                <rect key="frame" x="145" y="437.5" width="124.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AppColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gk7-Ac-7n8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nzR-6u-1dk" firstAttribute="centerX" secondItem="BeL-km-epr" secondAttribute="centerX" id="Cxr-4G-uQH"/>
+                            <constraint firstItem="nzR-6u-1dk" firstAttribute="centerY" secondItem="BeL-km-epr" secondAttribute="centerY" id="c5a-pk-zcw"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="AddPostUnselected" selectedImage="AddPostSelected" id="09d-Cn-4sA"/>
                 </viewController>
@@ -135,8 +172,20 @@
                     <view key="view" contentMode="scaleToFill" id="GKv-nY-1Im">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtE-zw-6vK">
+                                <rect key="frame" x="161" y="437.5" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AppColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qCv-PW-5b1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MtE-zw-6vK" firstAttribute="centerY" secondItem="GKv-nY-1Im" secondAttribute="centerY" id="9TW-x9-F91"/>
+                            <constraint firstItem="MtE-zw-6vK" firstAttribute="centerX" secondItem="GKv-nY-1Im" secondAttribute="centerX" id="LE7-AG-BOe"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ChatUnselected" selectedImage="ChatSelected" id="ze5-ya-Ooq"/>
                 </viewController>
@@ -156,6 +205,9 @@
         <image name="FavoritesUnselected" width="24" height="24"/>
         <image name="HomeSelected" width="24" height="24"/>
         <image name="HomeUnselected" width="24" height="24"/>
+        <namedColor name="AppColor">
+            <color red="0.35686274509803922" green="0.73725490196078436" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

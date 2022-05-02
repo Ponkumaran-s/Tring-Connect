@@ -39,7 +39,6 @@ class TCHomeViewModel {
         guard let kind = homeItem.kind else { return UITableViewCell() }
         
         let homeItemType = getHomeItemType(for: kind)
-        print(homeItemType,"##")
         
         switch homeItem {
         case let storyItem as TCStoryItem:
