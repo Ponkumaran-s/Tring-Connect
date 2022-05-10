@@ -10,13 +10,16 @@ import UIKit
 class TCHighlightCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var highlightImageView: UIImageView!
+    @IBOutlet weak var onlineView: UIView!
+    @IBOutlet weak var onlineOuterView: UIView!
     @IBOutlet weak var highlightNameTag: UILabel!
     
     private let viewModel = TCHighlightViewModel()
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        onlineView.layer.cornerRadius =  onlineView.frame.width / 2
+        onlineOuterView.layer.cornerRadius =  onlineOuterView.frame.width / 2
     }
 
 }
@@ -27,6 +30,8 @@ extension TCHighlightCollectionViewCell {
         if index == 0 {
             highlightImageView.image = UIImage(named: TCConstants.addHighlightButton)
             highlightNameTag.isHidden = true
+            onlineView.isHidden = true
+            onlineOuterView.isHidden = true
         } else {
             highlightImageView.image = UIImage(named: item.userDP ?? "")
             highlightNameTag.text = item.username

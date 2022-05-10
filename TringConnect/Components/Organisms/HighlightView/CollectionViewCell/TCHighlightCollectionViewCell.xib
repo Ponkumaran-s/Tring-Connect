@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -36,6 +37,22 @@
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eae-eb-OrH">
+                        <rect key="frame" x="44" y="44" width="14" height="14"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="aUY-wp-Pon"/>
+                            <constraint firstAttribute="width" secondItem="Eae-eb-OrH" secondAttribute="height" multiplier="1:1" id="zCf-M0-zUP"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z32-fa-1Fn">
+                        <rect key="frame" x="46" y="46" width="10" height="10"/>
+                        <color key="backgroundColor" name="AppColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Cye-8D-7V5"/>
+                            <constraint firstAttribute="width" secondItem="Z32-fa-1Fn" secondAttribute="height" multiplier="1:1" id="pI3-id-ec0"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
@@ -43,6 +60,11 @@
                 <constraint firstAttribute="trailing" secondItem="O8S-Cf-q9q" secondAttribute="trailing" id="3j0-Qq-pk1"/>
                 <constraint firstItem="O8S-Cf-q9q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4Zm-c3-f0R"/>
                 <constraint firstItem="RR4-io-cnV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6bc-9i-HVx"/>
+                <constraint firstItem="Eae-eb-OrH" firstAttribute="width" secondItem="Eae-eb-OrH" secondAttribute="height" multiplier="1:1" id="NKj-mc-8YT"/>
+                <constraint firstItem="Z32-fa-1Fn" firstAttribute="trailing" secondItem="RR4-io-cnV" secondAttribute="trailing" constant="-4" id="XKI-Sq-oJM"/>
+                <constraint firstItem="Z32-fa-1Fn" firstAttribute="centerX" secondItem="Eae-eb-OrH" secondAttribute="centerX" id="Z5L-Kz-5wK"/>
+                <constraint firstItem="Z32-fa-1Fn" firstAttribute="centerY" secondItem="Eae-eb-OrH" secondAttribute="centerY" id="bLB-X7-Ahc"/>
+                <constraint firstItem="Z32-fa-1Fn" firstAttribute="bottom" secondItem="RR4-io-cnV" secondAttribute="bottom" constant="-4" id="f0V-bG-eGP"/>
                 <constraint firstItem="O8S-Cf-q9q" firstAttribute="top" secondItem="RR4-io-cnV" secondAttribute="bottom" constant="2" id="h49-dX-Vxl"/>
                 <constraint firstAttribute="trailing" secondItem="RR4-io-cnV" secondAttribute="trailing" id="iYt-Zf-n6Q"/>
                 <constraint firstAttribute="bottom" secondItem="O8S-Cf-q9q" secondAttribute="bottom" id="mRf-gq-er5"/>
@@ -51,8 +73,15 @@
             <connections>
                 <outlet property="highlightImageView" destination="RR4-io-cnV" id="ceS-Of-YjU"/>
                 <outlet property="highlightNameTag" destination="O8S-Cf-q9q" id="HrI-TQ-990"/>
+                <outlet property="onlineOuterView" destination="Eae-eb-OrH" id="fDK-IX-16z"/>
+                <outlet property="onlineView" destination="Z32-fa-1Fn" id="rxs-YT-hMv"/>
             </connections>
-            <point key="canvasLocation" x="211.59420289855075" y="119.86607142857142"/>
+            <point key="canvasLocation" x="211.59420289855075" y="119.53125"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <namedColor name="AppColor">
+            <color red="0.35686274509803922" green="0.73725490196078436" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
